@@ -1,0 +1,8 @@
+[package]
+name = "venus_analyzer"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+venus_lexer = { path = "../venus_lexer" }
+venus_parser = { path = "../venus_parser" }

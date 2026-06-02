@@ -1,0 +1,96 @@
+{
+    "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+    "name": "VenusScript",
+    "patterns": [
+        {
+            "include": "#comments"
+        },
+        {
+            "include": "#strings"
+        },
+        {
+            "include": "#decorators"
+        },
+        {
+            "include": "#types"
+        },
+        {
+            "include": "#keywords"
+        },
+        {
+            "include": "#constants"
+        },
+        {
+            "include": "#numbers"
+        },
+        {
+            "include": "#functions"
+        },
+        {
+            "include": "#variables"
+        }
+    ],
+    "repository": {
+        "comments": {
+            "patterns": [
+                {
+                    "name": "comment.line.number-sign.venusscript",
+                    "match": "#.*$"
+                }
+            ]
+        },
+        "strings": {
+            "name": "string.quoted.double.venusscript",
+            "begin": "\"",
+            "end": "\"",
+            "patterns": [
+                {
+                    "name": "constant.character.escape.venusscript",
+                    "match": "\\\\."
+                }
+            ]
+        },
+        "decorators": {
+            "name": "meta.decorator.venusscript",
+            "match": "@[a-zA-Z0-9_.]+",
+            "captures": {
+                "0": { "name": "entity.name.function.decorator.venusscript" }
+            }
+        },
+        "types": {
+            "name": "entity.name.type.class.venusscript",
+            "match": "\\b(int|float|string|bool|vec2|vec3|vec4|mat2|mat3|mat4|tensor|buffer|object|struct|class|behaviour|enum|func|task|signal)\\b"
+        },
+        "keywords": {
+            "patterns": [
+                {
+                    "name": "keyword.control.venusscript",
+                    "match": "\\b(if|elif|else|for|in|while|return|export|ref|const|uses|import|from)\\b"
+                }
+            ]
+        },
+        "constants": {
+            "patterns": [
+                {
+                    "name": "constant.language.venusscript",
+                    "match": "\\b(true|false)\\b"
+                }
+            ]
+        },
+        "numbers": {
+            "name": "constant.numeric.venusscript",
+            "match": "\\b\\d+(\\.\\d+)?\\b"
+        },
+        "functions": {
+            "match": "\\b([a-zA-Z_][a-zA-Z0-9_]*)\\s*(?=\\()",
+            "captures": {
+                "1": { "name": "entity.name.function.venusscript" }
+            }
+        },
+        "variables": {
+            "match": "\\b([a-zA-Z_][a-zA-Z0-9_]*)\\b",
+            "name": "variable.other.readwrite.venusscript"
+        }
+    },
+    "scopeName": "source.venusscript"
+}

@@ -1,0 +1,18 @@
+[workspace]
+members = [
+    "crates/venus_lexer",
+    "crates/venus_parser",
+    "crates/venus_analyzer"
+]
+
+[package]
+name = "venus_compiler"
+version = "0.1.0"
+edition = "2021"
+authors = ["FireInc / Team Neural Horizon"]
+description = "Ahead-of-Time compiler for the VenusScript programming language"
+
+[dependencies]
+venus_lexer = { path = "crates/venus_lexer" }
+venus_parser = { path = "crates/venus_parser" }
+venus_analyzer = { path = "crates/venus_analyzer" }

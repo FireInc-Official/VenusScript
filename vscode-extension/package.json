@@ -1,0 +1,66 @@
+{
+  "name": "venusscript",
+  "displayName": "VenusScript",
+  "description": "Language support for VenusScript (FlareOS / VenusStudio)",
+  "version": "1.0.0",
+  "publisher": "FireInc",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "main": "./out/extension.js",
+  "activationEvents": [
+    "onLanguage:venusscript",
+    "onCommand:venusscript.runFile"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "venusscript",
+        "aliases": [
+          "VenusScript",
+          "venusscript"
+        ],
+        "extensions": [
+          ".vs"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "venusscript",
+        "scopeName": "source.venusscript",
+        "path": "./syntaxes/venusscript.tmLanguage.json"
+      }
+    ],
+    "commands": [
+      {
+        "command": "venusscript.runFile",
+        "title": "Run VenusScript",
+        "icon": "$(play)"
+      }
+    ],
+    "menus": {
+      "editor/title/run": [
+        {
+          "when": "resourceExtname == .vs",
+          "command": "venusscript.runFile",
+          "group": "navigation"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.80.0",
+    "@types/node": "18.x",
+    "typescript": "^5.1.3"
+  }
+}
