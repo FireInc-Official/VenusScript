@@ -1,17 +1,11 @@
 <div align="center">
-  <img src="logo.png" alt="VenusScript Logo" width="120" height="120" style="border-radius: 20px;">
-  <h1>VenusScript</h1>
-  <p><strong>A powerful, minimalistic, and high-performance programming language.</strong></p>
-  <p><i>"Everything is a Variable."</i></p>
-  
+  <img src="VenusScript.png" alt="VenusScript Logo" width="1000" style="border-radius:20px">  
   <p>
     <img src="https://img.shields.io/badge/version-1.0.0-blue.svg?style=for-the-badge" alt="Version">
     <img src="https://img.shields.io/badge/language-Rust-orange.svg?style=for-the-badge" alt="Rust">
     <img src="https://img.shields.io/badge/license-MIT-green.svg?style=for-the-badge" alt="License">
   </p>
 </div>
-
----
 
 ## 🌌 What is VenusScript?
 
