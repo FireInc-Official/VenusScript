@@ -15,7 +15,7 @@
 
 ## 🌌 What is VenusScript?
 
-**VenusScript** (v1.0.0) is a modern, statically-typed programming language originally designed for the **FlareOS** ecosystem and the **VenusStudio 3D Engine**. It completely abandons the traditional, clunky distinctions between classes, functions, objects, and properties. 
+**VenusScript** (beta v0.1) is a modern, statically-typed programming language originally designed for the **FlareOS** ecosystem and the **VenusStudio 3D Engine**. It completely abandons the traditional, clunky distinctions between classes, functions, objects, and properties. 
 
 In VenusScript, **everything is a variable**, creating a perfectly uniform, beautiful, and deeply nested syntax.
 
