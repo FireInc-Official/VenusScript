@@ -2,7 +2,7 @@
   "name": "venusscript",
   "displayName": "VenusScript",
   "description": "Language support for VenusScript (FlareOS / VenusStudio)",
-  "version": "1.0.0",
+  "version": "0.2.0",
   "publisher": "FireInc",
   "engines": {
     "vscode": "^1.80.0"

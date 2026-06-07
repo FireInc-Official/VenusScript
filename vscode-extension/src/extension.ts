@@ -111,7 +111,7 @@ export function activate(context: vscode.ExtensionContext) {
             if (lineText.trim().startsWith('import ') || lineText.trim().startsWith('from ')) {
                 // If it's std, map it to the compiler's std.vs
                 if (word === 'std') {
-                    const stdPath = 'D:\\FireInc Projects and Workspace\\VenusScript\\venus_compiler\\crates\\venus_analyzer\\src\\stdlib\\std.vs';
+                    const stdPath = 'D:\\FireInc Projects and Workspace\\VenusScript\\venus_compiler\\src\\analyzer\\std.vs';
                     if (fs.existsSync(stdPath)) {
                         return new vscode.Location(vscode.Uri.file(stdPath), new vscode.Position(0, 0));
                     }
