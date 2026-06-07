@@ -10,15 +10,30 @@
 
 **VenusScript** is a radically new programming language created by **FireInc**. Designed for absolute minimalism, lightning-fast execution, and architectural elegance, it powers our entire ecosystem. By abandoning the traditional Bytecode VM, VenusScript operates as a highly optimized, single-pass Abstract Syntax Tree (AST) evaluator running on zero-cost Rust closures. 
 
-Everything in VenusScript is built upon a single, universal concept: **Absolute Homoiconicity**. There are no objects or properties in the traditional sense — **everything is a variable**, including control flow (`if`, `while`, `for`) and modules.
+Everything in VenusScript is built upon a single, universal concept: **Unified AST Architecture**. There are no objects or properties in the traditional sense — **everything is a variable**, including control flow (`if`, `while`, `for`) and modules.
 
 ## 🚀 Key Features
 
 -   **Zero-Cost Execution:** No Bytecode VM. Execution happens directly on the AST via `Rc<Vec<Node>>` memory arenas, ensuring minimum memory allocation overhead.
--   **Absolute Homoiconicity:** Control structures are just variables. The language is perfectly uniform.
+-   **Unified AST Architecture:** Control structures are just variables. The language is perfectly uniform.
 -   **No Equals Sign (`=`):** Assignment and binding are handled purely by the colon (`:`), creating a beautiful, unified declarative aesthetic.
 -   **Spatial Harmony:** No curly braces `{}` or semicolons `;`. The language structure is defined entirely by 4-space indentation.
 -   **Native Hardware Integration:** Built-in primitives for vectors (`vec2`, `vec3`), matrices, and AI tensors (`tensor`), designed to seamlessly interface with any hardware, including custom SoCs and advanced ecosystems like Horizon Workspace.
+
+## ⚖️ Current State vs. Ecosystem Vision
+
+At FireInc, we dream big, but we believe in open-source honesty. Here is the exact status of the v0.2.0 release:
+
+**What Works Today (v0.2.0):**
+- ✅ The Rust AOT Parser & Evaluator (Zero-Cost AST execution).
+- ✅ The complete `std.vs` standard library with native Rust closures (Math, File I/O, System Time).
+- ✅ The strict `colon (:)` assignment syntax and dot-notation mutations.
+- ✅ The `VenusScript_Installer.exe` and VS Code Extension.
+
+**The FireInc Vision (Planned):**
+- 🗺️ NPU/GPU Compilation: Direct lowering of `@hardware` and `tensor` objects to hardware shaders.
+- 🗺️ Horizon Workspace Integration: Deep hooks into the FireInc operating environment.
+- 🗺️ FlareOS Bootstrapping.
 
 ## 📦 Installation
 

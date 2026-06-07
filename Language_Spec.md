@@ -13,7 +13,7 @@ VenusScript is a radically new programming language engineered by **FireInc**. I
 
 We asked a simple question: *What if a programming language had only one underlying structural rule?*
 
-### 1.1 "Everything is a Variable" (Absolute Homoiconicity)
+### 1.1 "Everything is a Variable" (Unified AST Architecture)
 In modern languages, a class is different from a function, which is different from a primitive, which is different from an `if` statement. This creates cognitive load and architectural fragmentation.
 
 In VenusScript, **everything is a variable**. 
