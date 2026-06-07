@@ -3,29 +3,14 @@
 version = 4
 
 [[package]]
-name = "venus_analyzer"
-version = "0.1.0"
-dependencies = [
- "venus_lexer",
- "venus_parser",
-]
+name = "rustc-hash"
+version = "2.1.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "94300abf3f1ae2e2b8ffb7b58043de3d399c73fa6f4b73826402a5c457614dbe"
 
 [[package]]
 name = "venus_compiler"
-version = "0.1.0"
+version = "0.2.0-beta"
 dependencies = [
- "venus_analyzer",
- "venus_lexer",
- "venus_parser",
-]
-
-[[package]]
-name = "venus_lexer"
-version = "0.1.0"
-
-[[package]]
-name = "venus_parser"
-version = "0.1.0"
-dependencies = [
- "venus_lexer",
+ "rustc-hash",
 ]

@@ -1,0 +1,1 @@
+D:\FireInc\ Projects\ and\ Workspace\VenusScript\installer\target\release\installer.exe: D:\FireInc\ Projects\ and\ Workspace\VenusScript\installer\src\../../venus_compiler/target/release/vscript.exe D:\FireInc\ Projects\ and\ Workspace\VenusScript\installer\src\main.rs

@@ -1,18 +1,13 @@
-[workspace]
-members = [
-    "crates/venus_lexer",
-    "crates/venus_parser",
-    "crates/venus_analyzer"
-]
-
 [package]
 name = "venus_compiler"
-version = "0.1.0"
+version = "0.2.0-beta"
 edition = "2021"
 authors = ["FireInc / Team Neural Horizon"]
 description = "Ahead-of-Time compiler for the VenusScript programming language"
 
+[[bin]]
+name = "vscript"
+path = "src/main.rs"
+
 [dependencies]
-venus_lexer = { path = "crates/venus_lexer" }
-venus_parser = { path = "crates/venus_parser" }
-venus_analyzer = { path = "crates/venus_analyzer" }
+rustc-hash = "2.1.2"
